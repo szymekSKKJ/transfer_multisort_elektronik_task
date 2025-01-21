@@ -16,6 +16,10 @@ exports.readCsvFile = void 0;
 const fs_1 = __importDefault(require("fs"));
 const papaparse_1 = __importDefault(require("papaparse"));
 const readCsvFile = (pathToFike) => __awaiter(void 0, void 0, void 0, function* () {
+    // In this case we read the file locally but instead we can simulate a SQL query which can looks like this:
+    // SELECT id, date, price FROM share_prices
+    // "share_prices" is the name of table
+    // The currency is not needed
     const response = yield new Promise((resolve) => {
         fs_1.default.readFile(pathToFike, "utf8", (error, data) => {
             if (error) {
