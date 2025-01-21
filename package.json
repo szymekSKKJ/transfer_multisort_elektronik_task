@@ -1,0 +1,19 @@
+{
+  "name": "transfer_multisort_elektronik_task",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npm run build && cd build && node main.js",
+    "build": "xcopy .\\src\\data .\\build\\data /E /I /Y && tsc --noEmitOnError"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "papaparse": "^5.5.1",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.3.15"
+  }
+}
