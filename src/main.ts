@@ -154,7 +154,5 @@ const getPropertiesOfSharePrices = (sharePrices: SharePrices[], initialStartDate
 
   if (data !== null) {
     const statistics = getPropertiesOfSharePrices(data, data.at(0)!.date, data.at(-1)!.date);
-
-    console.log(statistics);
   }
 })();
